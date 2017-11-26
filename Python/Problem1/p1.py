@@ -1,3 +1,7 @@
+"""
+ Solution to Euler methods in Python 
+ Multiples of 3 or 5 below N
+"""
 
 def find_multiples_sum_for_range(number_range):
     """
@@ -38,4 +42,4 @@ def find_multiples_sum_for_range(number_range):
 
     return multiple_sum
 
-print find_multiples_sum_for_range(10)
+find_multiples_sum_for_range(10)

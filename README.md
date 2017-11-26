@@ -8,5 +8,5 @@ A very good description has been given on [Project Euler](https://projecteuler.n
 
 ## Solutions
 
-1. _ Sum of Multiples of 3 and 5 _ [Python](https://github.com/prabodhmeshram/project-euler/blob/master/Python/problem1.py)
+1. *Sum of Multiples of 3 and 5* [Python](https://github.com/prabodhmeshram/project-euler/blob/master/Python/problem1.py)
 

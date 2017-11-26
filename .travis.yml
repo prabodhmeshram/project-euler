@@ -4,5 +4,4 @@ python:
   - "2.6"
 
 script:
-  - cd Python 
-  - python -m unittest test_suite
+  - cd Python && python -m unittest test_suite

@@ -10,5 +10,5 @@ A very good description has been given on [Project Euler](https://projecteuler.n
 
 ## Solutions
 
-1. *Sum of Multiples of 3 and 5* [Python](https://github.com/prabodhmeshram/project-euler/blob/master/Python/Problem1/problem1.py) | [Javascript](https://github.com/prabodhmeshram/project-euler/tree/master/Javascript/Problem1/p1.js)
+1. *Sum of Multiples of 3 and 5* [Python](https://github.com/prabodhmeshram/project-euler/blob/master/Python/Problem1/p1.py) | [Javascript](https://github.com/prabodhmeshram/project-euler/blob/master/Javascript/Problem1/p1.js)
 

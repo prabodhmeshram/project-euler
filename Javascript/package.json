@@ -1,0 +1,19 @@
+{
+  "name": "project-euler-js",
+  "version": "1.0.0",
+  "description": "Solution of Project Euler in Javascript",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prabodhmeshram/project-euler/tree/master/Javascript"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Prabodh M",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1"
+  }
+}

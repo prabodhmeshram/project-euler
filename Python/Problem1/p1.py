@@ -30,7 +30,7 @@ def find_multiples_sum_for_range(number_range):
     """
     multiple_sum = 0
 
-    if number_range < 3:
+    if number_range < 3 or isinstance(number_range,int) is False:
         return 0
 
     for num in range(3, number_range):

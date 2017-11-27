@@ -22,4 +22,4 @@ let findMultiplesOfThreeAndFive = (range)=> {
     
 }
 
-module.exports = findMultiplesOfThreeAndFive;
+module.exports.findMultiplesOfThreeAndFive = findMultiplesOfThreeAndFive;

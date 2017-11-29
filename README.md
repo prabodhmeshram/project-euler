@@ -12,4 +12,5 @@ A very good description has been given on [Project Euler](https://projecteuler.n
 
 1. *Sum of Multiples of 3 and 5* [Python](https://github.com/prabodhmeshram/project-euler/blob/master/Python/Problem1/p1.py) | [Javascript](https://github.com/prabodhmeshram/project-euler/blob/master/Javascript/Problem1/p1.js)
 
-2. *Sum of Even Fibonacci Series* [Python] (https://github.com/prabodhmeshram/project-euler/tree/master/Python/Problem2/p2.py)
+2. *Sum of Even Fibonacci Series* [Python] (https://github.com/prabodhmeshram/project-euler/tree/master/Python/Problem2/p2.py) | 
+[Javascript](https://github.com/prabodhmeshram/project-euler/blob/master/Javascript/Problem2/p2.js)

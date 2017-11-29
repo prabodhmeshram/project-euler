@@ -15,4 +15,4 @@ A very good description has been given on [Project Euler](https://projecteuler.n
 2. *Sum of Even Fibonacci Series* [Python](https://github.com/prabodhmeshram/project-euler/tree/master/Python/Problem2/p2.py) | 
 [Javascript](https://github.com/prabodhmeshram/project-euler/blob/master/Javascript/Problem2/p2.js)
 
-3. *Greatest Prime Factor* [Python](https://github.com/prabodhmeshram/project-euler/tree/master/Python/Problem2/p2.py)
+3. *Greatest Prime Factor* [Python](https://github.com/prabodhmeshram/project-euler/tree/master/Python/Problem3/p3.py)

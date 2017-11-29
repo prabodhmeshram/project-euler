@@ -28,7 +28,7 @@ def get_greatest_prime_factor(number):
 
     """
 
-    if isValidPositiveInteger(number) is not True:
+    if isValidPositiveInteger(number) is not True or number < 2:
         return 0
 
     prime_numbers = get_prime_numbers_for_range(number)

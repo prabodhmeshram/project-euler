@@ -1,6 +1,7 @@
 import unittest
 from Problem1 import p1
 from Problem2 import p2
+from Problem3 import p3
 
 
 class MultipleTestCase(unittest.TestCase):
@@ -8,7 +9,7 @@ class MultipleTestCase(unittest.TestCase):
     Test case for checking multiple sum of range method
     """
 
-    print " Running Test Cases for Multiples of 3 and 5"
+    print " Euler P1: Running Test Cases for Multiples of 3 and 5"
 
     def test_for_invalid_values(self):
         self.assertEqual(p1.find_multiples_sum_for_range('Hello'), 0)
@@ -27,7 +28,7 @@ class EvenFibonacciTestCase(unittest.TestCase):
     Test case for checking the sum of even numbers in Fibo series
     """
 
-    print " Running Test Cases for Fibonacci Series"
+    print " Euler P2: Running Test Cases for Fibonacci Series"
     def test_for_invalid_values(self):
         self.assertEqual(p2.sum_of_even_fibonacci('Hello'), 0)
         self.assertEqual(p2.sum_of_even_fibonacci(10.00), 0)
@@ -40,6 +41,27 @@ class EvenFibonacciTestCase(unittest.TestCase):
     def test_for_valid(self):
         self.assertEqual(p2.sum_of_even_fibonacci(10), 10)
         self.assertEqual(p2.sum_of_even_fibonacci(6), 2)
+
+
+class PrimeFactorTestCase(unittest.TestCase):
+    """
+    Test case for checking the greatest prime factor
+    """
+
+    print " Euler P3: Running Test Cases for Greatest Prime Factor"
+
+    def test_for_invalid_values(self):
+        self.assertEqual(p3.get_greatest_prime_factor('Hello'), 0)
+        self.assertEqual(p3.get_greatest_prime_factor(10.00), 0)
+
+    def test_for_invalid_integer(self):
+        self.assertEqual(p3.get_greatest_prime_factor(-2), 0)
+        self.assertEqual(p3.get_greatest_prime_factor(-40), 0)
+        self.assertEqual(p3.get_greatest_prime_factor(1), 0)
+
+    def test_for_valid(self):
+        self.assertEqual(p3.get_greatest_prime_factor(10), 5)
+        self.assertEqual(p3.get_greatest_prime_factor(6), 3)
 
 
 if __name__ == '__main__':

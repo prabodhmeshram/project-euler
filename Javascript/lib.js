@@ -36,6 +36,25 @@ let lib = {
             return true;
         
         return false;
+    },
+
+    getPrimeNumbersForRange: (range) => {
+
+        let primeNumberArr = [2];
+        for(let i=3 ; i <= range; i++){
+            let isPrime = true;
+            for(let j=0; j < primeNumberArr.length; j++){
+                let primenum = primeNumberArr[j];
+                if(i%primenum == 0){
+                    isPrime = false;
+                    break;
+                }
+            }
+            if(isPrime)
+                primeNumberArr.push(i)
+        }
+
+        return primeNumberArr;
     }
 }
 

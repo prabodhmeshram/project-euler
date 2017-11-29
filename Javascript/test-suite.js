@@ -3,6 +3,7 @@
 const expect = require('chai').expect;
 const findMultiplesOfThreeAndFive = require('./Problem1/p1').findMultiplesOfThreeAndFive;
 const findSumOfEvenFibonacci = require('./Problem2/p2').findSumOfEvenFibonacci;
+const findGreatestPrimeFactor = require('./Problem3/p3').findGreatestPrimeFactor;
 
 
 describe('Project Euler Problem 1 - Sum of Multiple of 3 and 5', ()=>{
@@ -56,6 +57,35 @@ describe('Project Euler Problem 2 - Sum of even Fibonacci Series number', () => 
             expect(findSumOfEvenFibonacci(4)).to.equal(2);
             expect(findSumOfEvenFibonacci(10)).to.equal(10);
             expect(findSumOfEvenFibonacci(40)).to.equal(44);
+        })
+    })
+
+});
+
+describe('Project Euler Problem 3 - Find greatest Prime factor', () => {
+
+    describe('Invalid test cases', () => {
+        it('should return 0 for String', () => {
+            expect(findGreatestPrimeFactor('Grab')).to.equal(0);
+        })
+
+        it('should return 0 for Non Integer', () => {
+            expect(findGreatestPrimeFactor('-10.9')).to.equal(0);
+            expect(findGreatestPrimeFactor('10.9')).to.equal(0);
+        })
+
+        it('should return 0 for Invalid Integer', () => {
+            expect(findGreatestPrimeFactor(-10)).to.equal(0);
+            expect(findGreatestPrimeFactor(1)).to.equal(0);
+        })
+
+    })
+
+    describe('Valid test Cases', () => {
+        it('should return proper output for Valid Integer', () => {
+            expect(findGreatestPrimeFactor(4)).to.equal(2);
+            expect(findGreatestPrimeFactor(10)).to.equal(5);
+            expect(findGreatestPrimeFactor(56)).to.equal(7);
         })
     })
 

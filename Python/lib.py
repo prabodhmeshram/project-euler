@@ -70,12 +70,12 @@ def get_prime_numbers_for_range(num_range):
     prime_list.append(2)
 
     for num in range(3, num_range+1):
-        isPrime = True
+        is_prime = True
         for prime in prime_list:
             if num % prime is 0:
-                isPrime = False
+                is_prime = False
                 break
-        if isPrime:
+        if is_prime:
             prime_list.append(num)
 
     return prime_list

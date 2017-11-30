@@ -28,14 +28,19 @@ def get_palindrome(number):
 
     """
 
+    if isValidPositiveInteger(number) is not True or number < 100000:
+        return 0
+
+    palindrome = 0
     num = number
     
     while num > 100000:
         if is_number_palindrome(num) and does_it_have_3_digit_factors(num):
+            palindrome = num
             break
         num -= 1
     
-    return num
+    return palindrome
 
 def does_it_have_3_digit_factors(number):
 
@@ -43,8 +48,7 @@ def does_it_have_3_digit_factors(number):
     
     for x in range(100,999):
         if number % x == 0 and ( (number/x) > 100 and (number/x) < 999 ):
-            print (x,number/x)
             it_have = True
             break
 
-    return it_have 
+    return it_have

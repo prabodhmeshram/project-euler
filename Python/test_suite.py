@@ -2,6 +2,7 @@ import unittest
 from Problem1 import p1
 from Problem2 import p2
 from Problem3 import p3
+from Problem4 import p4
 
 
 class MultipleTestCase(unittest.TestCase):
@@ -62,6 +63,28 @@ class PrimeFactorTestCase(unittest.TestCase):
     def test_for_valid(self):
         self.assertEqual(p3.get_greatest_prime_factor(10), 5)
         self.assertEqual(p3.get_greatest_prime_factor(6), 3)
+
+
+class Palindrome6Digit(unittest.TestCase):
+    """
+    Test case for checking the 6 digit palindrome number
+    """
+
+    print " Euler P4: Running Test Cases for 6 Digit Palindrome number"
+
+    def test_for_invalid_values(self):
+        self.assertEqual(p4.get_palindrome('Hello'), 0)
+        self.assertEqual(p4.get_palindrome(10.00), 0)
+
+    def test_for_invalid_integer(self):
+        self.assertEqual(p4.get_palindrome(-2), 0)
+        self.assertEqual(p4.get_palindrome(-40), 0)
+        self.assertEqual(p4.get_palindrome(1), 0)
+
+    def test_for_valid(self):
+        self.assertEqual(p4.get_palindrome(999999), 906609)
+        self.assertEqual(p4.get_palindrome(800000), 793397)
+        self.assertEqual(p4.get_palindrome(793397), 793397)
 
 
 if __name__ == '__main__':

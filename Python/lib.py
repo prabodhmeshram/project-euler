@@ -105,3 +105,32 @@ def isValidPositiveInteger(number):
     if isinstance(number, int) and number > 0:
         return True
     return False
+
+
+def is_number_palindrome(number):
+    """
+    Check if number is palindrome
+
+    Parameters
+    ----------
+    number : int
+
+    Returns
+    -------
+    bool
+
+    Author
+    ------
+    Prabodh M
+
+    Date
+    ------
+    1 Dec 2017
+
+    """
+    reverse = int(str(number)[::-1])
+
+    if reverse == number:
+        return True
+
+    return False

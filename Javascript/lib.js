@@ -55,6 +55,24 @@ let lib = {
         }
 
         return primeNumberArr;
+    },
+
+    isNumberPalindrome: (number) => {
+        if(number == lib.reverseNumber(number))
+            return true;
+        
+        return false;
+    },
+
+    reverseNumber: (number) =>{
+        let revNum=0;
+        let integerNum = number;
+        number = number.toString();
+        for(let i=0; i < number.length; i++){
+            revNum = integerNum%10 + revNum * 10;
+            integerNum = Math.floor(integerNum/10);
+        }
+        return revNum;
     }
 }
 

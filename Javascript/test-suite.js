@@ -4,6 +4,7 @@ const expect = require('chai').expect;
 const findMultiplesOfThreeAndFive = require('./Problem1/p1').findMultiplesOfThreeAndFive;
 const findSumOfEvenFibonacci = require('./Problem2/p2').findSumOfEvenFibonacci;
 const findGreatestPrimeFactor = require('./Problem3/p3').findGreatestPrimeFactor;
+const getGreatestPalindromeForRange = require('./Problem4/p4').getGreatestPalindromeForRange;
 
 
 describe('Project Euler Problem 1 - Sum of Multiple of 3 and 5', ()=>{
@@ -86,6 +87,35 @@ describe('Project Euler Problem 3 - Find greatest Prime factor', () => {
             expect(findGreatestPrimeFactor(4)).to.equal(2);
             expect(findGreatestPrimeFactor(10)).to.equal(5);
             expect(findGreatestPrimeFactor(56)).to.equal(7);
+        })
+    })
+
+});
+
+describe('Project Euler Problem 4 - Find Palindrome for range', () => {
+
+    describe('Invalid test cases', () => {
+        it('should return 0 for String', () => {
+            expect(getGreatestPalindromeForRange('Grab')).to.equal(0);
+        })
+
+        it('should return 0 for Non Integer', () => {
+            expect(getGreatestPalindromeForRange('-10.9')).to.equal(0);
+            expect(getGreatestPalindromeForRange('10.9')).to.equal(0);
+        })
+
+        it('should return 0 for Invalid Integer', () => {
+            expect(getGreatestPalindromeForRange(-10)).to.equal(0);
+            expect(getGreatestPalindromeForRange(1)).to.equal(0);
+        })
+
+    })
+
+    describe('Valid test Cases', () => {
+        it('should return proper output for Valid Integer', () => {
+            expect(getGreatestPalindromeForRange(999999)).to.equal(906609);
+            expect(getGreatestPalindromeForRange(800000)).to.equal(793397);
+            expect(getGreatestPalindromeForRange(793397)).to.equal(793397);
         })
     })
 

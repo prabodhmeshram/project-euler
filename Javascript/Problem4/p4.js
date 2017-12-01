@@ -4,7 +4,7 @@ const lib = require('../lib')
 
 let getGreatestPalindromeForRange = (range) =>{
 
-    let palindrome;
+    let palindrome = 0;
     for(let i=range; i > 100000; i--){
         if (lib.isNumberPalindrome(i) && isHavingTwoThreeDigitFactor(i)){
             palindrome = i;
@@ -27,3 +27,5 @@ let isHavingTwoThreeDigitFactor = (number) =>{
 
     return itHave;
 }
+
+module.exports.getGreatestPalindromeForRange = getGreatestPalindromeForRange;

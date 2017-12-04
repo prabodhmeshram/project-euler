@@ -3,6 +3,7 @@ from Problem1 import p1
 from Problem2 import p2
 from Problem3 import p3
 from Problem4 import p4
+from Problem5 import p5
 
 
 class MultipleTestCase(unittest.TestCase):
@@ -86,6 +87,27 @@ class Palindrome6Digit(unittest.TestCase):
         self.assertEqual(p4.get_palindrome(800000), 793397)
         self.assertEqual(p4.get_palindrome(793397), 793397)
 
+
+class SmallestMultiple(unittest.TestCase):
+    """
+    Test case for getting the smallest multiple
+    """
+
+    print " Euler P5: Running Test Cases for Smallest Multiple"
+
+    def test_for_invalid_values(self):
+        self.assertEqual(p5.get_smallest_multiple('Hello'), 0)
+        self.assertEqual(p5.get_smallest_multiple(10.00), 0)
+
+    def test_for_invalid_integer(self):
+        self.assertEqual(p5.get_smallest_multiple(-2), 0)
+        self.assertEqual(p5.get_smallest_multiple(-40), 0)
+        self.assertEqual(p5.get_smallest_multiple(-13), 0)
+
+    def test_for_valid(self):
+        self.assertEqual(p5.get_smallest_multiple(10), 2520)
+        self.assertEqual(p5.get_smallest_multiple(5), 60)
+        self.assertEqual(p5.get_smallest_multiple(20), 232792560)
 
 if __name__ == '__main__':
     unittest.main()

@@ -134,3 +134,39 @@ def is_number_palindrome(number):
         return True
 
     return False
+
+def get_prime_multiples_of_number(number):
+    """
+    Get prime multiples of number
+
+    Parameters
+    ----------
+    number : int
+
+    Returns
+    -------
+    list
+
+    Author
+    ------
+    Prabodh M
+
+    Date
+    ------
+    1 Dec 2017
+
+    """
+
+    prime_list = get_prime_numbers_for_range(number)
+
+    target_list = []
+    for x in prime_list:
+        divisible = True
+        divisor = 1
+        while divisible:
+            divisor *= x
+            if number % divisor != 0:
+                break
+            target_list.append(x)
+
+    return target_list

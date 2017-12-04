@@ -19,3 +19,5 @@ A very good description has been given on [Project Euler](https://projecteuler.n
 [Javascript](https://github.com/prabodhmeshram/project-euler/blob/master/Javascript/Problem3/p3.js)
 
 4. *6 Digit Palindrome Number* [Python](https://github.com/prabodhmeshram/project-euler/tree/master/Python/Problem4/p4.py) | [Javascript](https://github.com/prabodhmeshram/project-euler/blob/master/Javascript/Problem4/p4.js)
+
+5. *Smallest Multiple* [Pyhon](https://github.com/prabodhmeshram/project-euler/tree/master/Python/Problem5/p5.py)

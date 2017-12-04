@@ -18,4 +18,4 @@ A very good description has been given on [Project Euler](https://projecteuler.n
 3. *Greatest Prime Factor* [Python](https://github.com/prabodhmeshram/project-euler/tree/master/Python/Problem3/p3.py) | 
 [Javascript](https://github.com/prabodhmeshram/project-euler/blob/master/Javascript/Problem3/p3.js)
 
-4. *6 Digit Palindrome Number* [Python](https://github.com/prabodhmeshram/project-euler/tree/master/Python/Problem4/p4.py)
+4. *6 Digit Palindrome Number* [Python](https://github.com/prabodhmeshram/project-euler/tree/master/Python/Problem4/p4.py) | [Javascript](https://github.com/prabodhmeshram/project-euler/blob/master/Javascript/Problem4/p4.js)

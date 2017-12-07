@@ -73,6 +73,24 @@ let lib = {
             integerNum = Math.floor(integerNum/10);
         }
         return revNum;
+    },
+
+    getPrimeMultiplesOfNumber: (number) => {
+        let primeList = lib.getPrimeNumbersForRange(number)
+        
+        let targetList = [];
+        for (let x in primeList){
+            let divisible = true;
+            let divisor = 1;
+            while (divisible){
+                divisor *= primeList[x];
+                if(number % divisor != 0){
+                    break;
+                }
+                targetList.push(primeList[x]);
+            }
+        }
+        return targetList;
     }
 }
 

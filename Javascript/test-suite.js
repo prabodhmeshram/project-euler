@@ -5,6 +5,7 @@ const findMultiplesOfThreeAndFive = require('./Problem1/p1').findMultiplesOfThre
 const findSumOfEvenFibonacci = require('./Problem2/p2').findSumOfEvenFibonacci;
 const findGreatestPrimeFactor = require('./Problem3/p3').findGreatestPrimeFactor;
 const getGreatestPalindromeForRange = require('./Problem4/p4').getGreatestPalindromeForRange;
+const getSmallestMultiple = require('./Problem5/p5').getSmallestMultiple;
 
 
 describe('Project Euler Problem 1 - Sum of Multiple of 3 and 5', ()=>{
@@ -116,6 +117,35 @@ describe('Project Euler Problem 4 - Find Palindrome for range', () => {
             expect(getGreatestPalindromeForRange(999999)).to.equal(906609);
             expect(getGreatestPalindromeForRange(800000)).to.equal(793397);
             expect(getGreatestPalindromeForRange(793397)).to.equal(793397);
+        })
+    })
+
+});
+
+describe('Project Euler Problem 5 - Get Smallest Multiple for Range', () => {
+
+    describe('Invalid test cases', () => {
+        it('should return 0 for String', () => {
+            expect(getSmallestMultiple('Grab')).to.equal(0);
+        })
+
+        it('should return 0 for Non Integer', () => {
+            expect(getSmallestMultiple('-10.9')).to.equal(0);
+            expect(getSmallestMultiple('10.9')).to.equal(0);
+        })
+
+        it('should return 0 for Invalid Integer', () => {
+            expect(getSmallestMultiple(-10)).to.equal(0);
+            expect(getSmallestMultiple(1)).to.equal(0);
+        })
+
+    })
+
+    describe('Valid test Cases', () => {
+        it('should return proper output for Valid Integer', () => {
+            expect(getSmallestMultiple(10)).to.equal(2520);
+            expect(getSmallestMultiple(5)).to.equal(60);
+            expect(getSmallestMultiple((20))).to.equal(232792560);
         })
     })
 
